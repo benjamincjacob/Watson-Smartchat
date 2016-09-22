@@ -1,25 +1,14 @@
 {
-    "Params": {
-        "DevMode": {
-            "Instrumentation": {
-                "command": "",
-                "env": {
-                    "BLUEMIX_APP_MGMT_ENABLE": "devconsole+shell+inspector",
-                    "NODE_ENV": "development"
-                },
-                "memory": "384M"
-            },
-            "Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
-        },
-        "Name": "ATT-DEV",
-        "Target": {
-            "Org": "benjamin.c.jacob@us.ibm.com",
-            "Space": "dev",
-            "Url": "https://api.ng.bluemix.net"
-        },
-        "Timeout": 60
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "benjamin.c.jacob@us.ibm.com",
+      "Space": "dev"
     },
-    "Path": "",
-    "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
-    "Type": "Cloud Foundry"
+    "Name": "ATT-DEV",
+    "Instrumentation": {}
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
 }
