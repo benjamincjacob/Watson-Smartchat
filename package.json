@@ -36,7 +36,9 @@
     "string-template": "^1.0.0",
     "use-strict": "^1.0.1",
     "uuid": "^2.0.2",
-    "watson-developer-cloud": "^2.1.4"
+    "watson-developer-cloud": "^2.1.4",
+    "swagger-node-express": "~2.0",
+    "minimist": "*"
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
