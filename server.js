@@ -55,6 +55,7 @@ checkAndRequire(process.env.USE_FACEBOOK,"./lib/bot/facebook","Initializing FB M
 checkAndRequire(process.env.USE_TWILIO, "./lib/bot/twilio", "Initializing Twilio Bot");
 checkAndRequire(process.env.USE_TWILIO_SMS, "./lib/bot/twilio-sms", "Initializing Twilio Bot");
 checkAndRequire(process.env.USE_WEBUI, "./lib/bot/web-ui", "Initializing WebUI");
+checkAndRequire(process.env.USE_SMART, "./lib/bot/smart-chat", "Initializing SmartChat");
 
 http.listen(port, function () {
   debug('Server listening on port: ' + port);
