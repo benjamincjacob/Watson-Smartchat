@@ -18,6 +18,7 @@
 
 require('dotenv').config();
 var express = require('express');
+var cors = require('cors');
 var app = express();
 var bodyParser = require('body-parser');
 var rateLimit = require('express-rate-limit');
@@ -28,6 +29,9 @@ var debug = require('debug')('bot:server');
 
 // Deployment tracking
 //require('cf-deployment-tracker-client').track();
+
+// configure cors
+app.use(cors());
 
 // configure express
 app.use(helmet());
