@@ -30,11 +30,10 @@ var debug = require('debug')('bot:server');
 // Deployment tracking
 //require('cf-deployment-tracker-client').track();
 
-// configure cors
-app.use(cors());
-
 // configure express
 app.use(helmet());
+// configure cors
+app.use(cors());
 app.use('/api/', rateLimit({
   windowMs: 60 * 1000, // seconds
   delayMs: 0,
